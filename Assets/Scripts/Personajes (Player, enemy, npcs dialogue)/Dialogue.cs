@@ -20,6 +20,7 @@ public class Dialogue : MonoBehaviour
     private bool didDialogueStart;
     private int currentLineIndex;
 
+    //iniciar el diálogo y ocultar el botón de interacción
     private void Start()
     {
         if(buttonE != null)
@@ -31,6 +32,7 @@ public class Dialogue : MonoBehaviour
             dialogueLines = new string[0];
     }
 
+    //verificar si el jugador presiona la tecla para iniciar o avanzar el diálogo
     void Update()
     {
         if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
@@ -54,7 +56,8 @@ public class Dialogue : MonoBehaviour
             }
         }
     }
-    
+
+    //iniciar el diálogo
     private void StartDialogue()
     {
         if (!didDialogueStart)
@@ -82,6 +85,7 @@ public class Dialogue : MonoBehaviour
         }
     }
 
+    //avanzar a la siguiente línea de diálogo o terminar el diálogo
     private void NextDialogueLine()
     {
         currentLineIndex++;
@@ -114,6 +118,7 @@ public class Dialogue : MonoBehaviour
         }   
     }
 
+    //mostrar el texto letra por letra
     private IEnumerator ShowLine()
     {
         dialogueText.text = string.Empty;
@@ -125,6 +130,8 @@ public class Dialogue : MonoBehaviour
         }
     }
 
+
+    //detectar si el jugador entra o sale del rango de interacción
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.CompareTag("Player"))

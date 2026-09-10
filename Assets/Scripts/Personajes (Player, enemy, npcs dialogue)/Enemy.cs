@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public abstract class Enemy : MonoBehaviour
 {
+    //este script va a servir como herencia para todos los enemigos, por lo que no se va a instanciar directamente en la escena, sino que se va a instanciar una clase hija de esta clase
     [SerializeField] private Transform player;
     [SerializeField] private float detectionRadius;
     [SerializeField] private float speed;
@@ -15,8 +17,12 @@ public class Enemy : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    
-    void Update()
+    private void FixedUpdate()
+    {
+        Move();
+    }
+
+    private void Move()
     {
         if (player == null) return;
 
