@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public abstract class Enemy : MonoBehaviour
 {
+    //hola
     [SerializeField] private Transform player;
     [SerializeField] private float detectionRadius;
     [SerializeField] private float speed;
