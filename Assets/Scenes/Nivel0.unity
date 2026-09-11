@@ -4460,8 +4460,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
   gameOverPanel: {fileID: 729138256}
-  PanelVictoria: {fileID: 0}
-  PanelDerrota: {fileID: 0}
+  PanelVictoria: {fileID: 729138256}
+  PanelDerrota: {fileID: 729138256}
   container: {fileID: 626932133}
 --- !u!1 &833371400
 GameObject:
