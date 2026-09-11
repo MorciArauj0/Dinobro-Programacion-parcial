@@ -4,7 +4,6 @@ using UnityEngine;
 public abstract class Enemy : MonoBehaviour
 {
     //este script va a servir como herencia para todos los enemigos, por lo que no se va a instanciar directamente en la escena, sino que se va a instanciar una clase hija de esta clase
-    //y a ca tambien
     
     [SerializeField] private Transform player;
     [SerializeField] private float detectionRadius;

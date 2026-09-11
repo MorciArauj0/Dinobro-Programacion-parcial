@@ -516,7 +516,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyYellow
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6462190358620740678, guid: 5ef86b44337c69d49b25618a62371b13, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9723,6 +9724,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad389198e3df864dba3c22bc9e90208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
+  gameOverPanel: {fileID: 165910326}
+  PanelVictoria: {fileID: 0}
+  PanelDerrota: {fileID: 0}
   container: {fileID: 1963053312}
 --- !u!1 &1660344250
 GameObject:

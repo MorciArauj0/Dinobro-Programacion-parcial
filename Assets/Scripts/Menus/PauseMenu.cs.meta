@@ -1,2 +1,15 @@
 fileFormatVersion: 2
 guid: 6ad389198e3df864dba3c22bc9e90208
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gameOverPanel: {instanceID: 0}
+  - PanelVictoria: {instanceID: 0}
+  - PanelDerrota: {instanceID: 0}
+  - container: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

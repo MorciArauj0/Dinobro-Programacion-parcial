@@ -831,6 +831,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad389198e3df864dba3c22bc9e90208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
+  gameOverPanel: {fileID: 606328521}
+  PanelVictoria: {fileID: 0}
+  PanelDerrota: {fileID: 0}
   container: {fileID: 2106407781}
 --- !u!1 &390052711
 GameObject:
@@ -6803,6 +6806,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 410813254}
     m_Modifications:
+    - target: {fileID: -316905146113428527, guid: 5ef86b44337c69d49b25618a62371b13, type: 3}
+      propertyPath: speed
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -316905146113428527, guid: 5ef86b44337c69d49b25618a62371b13, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1419588330}
+    - target: {fileID: -316905146113428527, guid: 5ef86b44337c69d49b25618a62371b13, type: 3}
+      propertyPath: "da\xF1oPorToque"
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -316905146113428527, guid: 5ef86b44337c69d49b25618a62371b13, type: 3}
+      propertyPath: detectionRadius
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1719454323677035846, guid: 5ef86b44337c69d49b25618a62371b13, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.135
@@ -6855,7 +6874,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy3.1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6462190358620740678, guid: 5ef86b44337c69d49b25618a62371b13, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11389,6 +11409,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 410813254}
     m_Modifications:
+    - target: {fileID: -316905146113428527, guid: 5ef86b44337c69d49b25618a62371b13, type: 3}
+      propertyPath: speed
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -316905146113428527, guid: 5ef86b44337c69d49b25618a62371b13, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1419588330}
+    - target: {fileID: -316905146113428527, guid: 5ef86b44337c69d49b25618a62371b13, type: 3}
+      propertyPath: "da\xF1oPorToque"
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -316905146113428527, guid: 5ef86b44337c69d49b25618a62371b13, type: 3}
+      propertyPath: detectionRadius
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1719454323677035846, guid: 5ef86b44337c69d49b25618a62371b13, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.367
@@ -11441,7 +11477,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy3.0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6462190358620740678, guid: 5ef86b44337c69d49b25618a62371b13, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

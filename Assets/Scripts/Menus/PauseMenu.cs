@@ -3,14 +3,20 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
+    [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private GameObject PanelVictoria;
+    [SerializeField] private GameObject PanelDerrota;
 
     public GameObject container; // Asigna el contenedor del menú de pausa en el Inspector
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape)) // Verifica si se presiona la tecla Escape
         {
-            container.SetActive(true);
-            Time.timeScale = 0; // Pausa el juego
+            if (!gameOverPanel.activeSelf && !PanelVictoria.activeSelf && !PanelDerrota.activeSelf)
+            {
+                container.SetActive(true);
+                Time.timeScale = 0; //pausa
+            }
         }
     }
 
