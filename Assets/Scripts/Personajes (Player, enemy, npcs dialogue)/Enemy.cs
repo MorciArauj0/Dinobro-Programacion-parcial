@@ -13,7 +13,7 @@ public abstract class Enemy : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movement;
 
-    void Start()
+    protected virtual void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }

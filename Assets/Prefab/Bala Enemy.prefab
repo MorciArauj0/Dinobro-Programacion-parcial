@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 9127628915972500491}
   - component: {fileID: 2589089667081486611}
+  - component: {fileID: -2330835997129841488}
   m_Layer: 0
-  m_Name: Bala
+  m_Name: Bala Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,7 +80,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 778136270091268006, guid: f69a539c4fd2a7b4f9d76ec9178caa3a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -91,3 +92,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &-2330835997129841488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5976126018524499924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aa331c0eff45774daa1186513169ec0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BalaEnemy
+  "da\xF1oPorToque": 1
+  bounceForce: 0.5
+  velocidad: 1
+  distanciaMax: 5

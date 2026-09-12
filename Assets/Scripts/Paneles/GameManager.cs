@@ -8,6 +8,11 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+
+
+
+
+
     public GameObject gameOverPanel;
     public TextMeshProUGUI gameOverText;
     public Button reiniciarButton;
@@ -33,9 +38,12 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
     }
 
-    
+   
+
+
     void Start()
     {
         gameOverActivo = false;
