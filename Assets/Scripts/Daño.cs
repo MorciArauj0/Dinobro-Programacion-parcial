@@ -1,12 +1,15 @@
 using UnityEngine;
 using System.Collections;
+
+
+
 public class Daño : MonoBehaviour
 {
 
     [SerializeField] private int dañoPorToque;
     [SerializeField] private float bounceForce;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.TryGetComponent(out Player player))
         {
@@ -15,7 +18,7 @@ public class Daño : MonoBehaviour
         }
     }
 
-    private void aplicarKnockback(GameObject player)
+    protected virtual void aplicarKnockback(GameObject player)
     {
         Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
         if (rb)

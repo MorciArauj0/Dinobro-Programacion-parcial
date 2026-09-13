@@ -1,17 +1,14 @@
 using UnityEngine;
 
-public class HeartVida : MonoBehaviour
+public class HeartVida : MonoBehaviour, IInteractable
 {
 
     [SerializeField] private int cantidadCuracion;
 
-    void OnTriggerEnter2D(Collider2D collision)
+    public void Interact(Player player)
     {
-        if (collision.TryGetComponent(out Player player))
-        {
-            player.curarVida(cantidadCuracion);
-            Destroy(gameObject);
-        }
+        player.curarVida(cantidadCuracion);
+        Destroy(gameObject);
     }
 
 }

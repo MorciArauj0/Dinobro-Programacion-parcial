@@ -1,13 +1,11 @@
 using Unity.VectorGraphics;
 using UnityEngine;
 
-public class Checkpoint : MonoBehaviour
+public class Checkpoint : MonoBehaviour, IInteractable
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void Interact(Player player)
     {
-        if (collision.CompareTag("Player"))
-        {
-            SceneController.instance.NextScene();
-        }
+        SceneController.instance.NextScene();
     }
+    
 }

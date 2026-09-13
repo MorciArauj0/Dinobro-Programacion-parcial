@@ -3,12 +3,24 @@ using Unity.VectorGraphics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ControladorCoins : MonoBehaviour
+public class ControladorCoins : MonoBehaviour, IGuardable
 {
     public static ControladorCoins instance;
 
     public int cantidadCoins;
     private int cantidadCoinsCheckpoint;
+
+
+    public void Guardar()
+    {
+        PlayerPrefs.SetInt("cantidadCoins", cantidadCoins);
+    }
+
+    public void Cargar()
+    {
+        cantidadCoins = PlayerPrefs.GetInt("cantidadCoins", 0);
+    }
+
 
     private void Awake()
     {

@@ -1,7 +1,7 @@
 using UnityEngine;
 
 
-public class KeySystem : MonoBehaviour
+public class KeySystem : MonoBehaviour, IInteractable
 {
     [SerializeField] GameObject Player;
 
@@ -9,13 +9,7 @@ public class KeySystem : MonoBehaviour
     private Vector2 vel;
     public float smoothTime;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    
     void Update()
     {
         if (Player == null) return;
@@ -27,12 +21,12 @@ public class KeySystem : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void Interact(Player player)
     {
-        if (collision.gameObject.CompareTag("Player") && !isPickedUp)
+        if (!isPickedUp)
         {
             isPickedUp = true;
-            collision.gameObject.GetComponent<Player>().AgregarLlave();
+            player.AgregarLlave();
         }
     }
-}
+}            

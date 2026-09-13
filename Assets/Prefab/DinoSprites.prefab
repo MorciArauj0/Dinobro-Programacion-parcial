@@ -159,14 +159,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   speed: 1.5
   rb2D: {fileID: 0}
-  move: 0
-  jumpForce: 7.5
-  isGrounded: 0
+  vidaMaxima: 0
+  vidaActual: 0
+  sePuedeMover: 1
+  velocidadRebote: {x: 0, y: 0}
+  jumpForce: 6.5
   groundCheck: {fileID: 6709926624778798971}
   groundRadius: 0.1
   GroundLayer:
     serializedVersion: 2
     m_Bits: 8
+  animator: {fileID: 0}
+  cantidadCoins: 0
+  Key: 0
+  keyText: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!70 &1115508880310644617
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

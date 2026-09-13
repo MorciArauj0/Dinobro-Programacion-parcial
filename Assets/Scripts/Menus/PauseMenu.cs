@@ -10,7 +10,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject container; // Asigna el contenedor del menú de pausa en el Inspector
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)) // Verifica si se presiona la tecla Escape
+        if (Input.GetKeyDown(KeyCode.P)) // Verifica si se presiona la tecla "P"
         {
             if (!gameOverPanel.activeSelf && !PanelVictoria.activeSelf && !PanelDerrota.activeSelf)
             {
@@ -18,6 +18,7 @@ public class PauseMenu : MonoBehaviour
                 Time.timeScale = 0; //pausa
             }
         }
+        
     }
 
         public void ButtonResume()

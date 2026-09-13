@@ -36,8 +36,14 @@ public class BalaEnemy : Daño
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected new void OnTriggerEnter2D(Collider2D collision)
     {
+        base.OnTriggerEnter2D(collision);
         enemyPadre?.RetornarBalaAlPool(this);
+    }
+
+    protected override void aplicarKnockback(GameObject player)
+    {
+
     }
 }

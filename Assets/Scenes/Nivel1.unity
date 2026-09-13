@@ -1702,11 +1702,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &646089154 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8268810720637419147, guid: 856a5cd804d1e984a95c1987e99798e1, type: 3}
-  m_PrefabInstance: {fileID: 4275017848632623726}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &735260887
 GameObject:
   m_ObjectHideFlags: 0
@@ -2244,20 +2239,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8227994112620837268, guid: 856a5cd804d1e984a95c1987e99798e1, type: 3}
   m_PrefabInstance: {fileID: 4275017848632623726}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1001299224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 646089154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2c39c174c6438e4ba4a68d74c48b8e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  "da\xF1oPorToque": 1
-  bounceForce: 6
 --- !u!1 &1013529151
 GameObject:
   m_ObjectHideFlags: 0
@@ -9899,35 +9880,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8268810720637419147, guid: 856a5cd804d1e984a95c1987e99798e1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1967650450}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 856a5cd804d1e984a95c1987e99798e1, type: 3}
 --- !u!4 &1967650448 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8227994112620837268, guid: 856a5cd804d1e984a95c1987e99798e1, type: 3}
   m_PrefabInstance: {fileID: 1967650447}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1967650449 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8268810720637419147, guid: 856a5cd804d1e984a95c1987e99798e1, type: 3}
-  m_PrefabInstance: {fileID: 1967650447}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1967650450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1967650449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2c39c174c6438e4ba4a68d74c48b8e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  "da\xF1oPorToque": 1
-  bounceForce: 6
 --- !u!1001 &1971367670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10673,10 +10632,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8268810720637419147, guid: 856a5cd804d1e984a95c1987e99798e1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1001299224}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 856a5cd804d1e984a95c1987e99798e1, type: 3}
 --- !u!1001 &6605847590059234810
 PrefabInstance:

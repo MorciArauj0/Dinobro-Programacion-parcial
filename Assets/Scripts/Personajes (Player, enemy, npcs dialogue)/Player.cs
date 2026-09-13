@@ -152,13 +152,12 @@ public class Player : MonoBehaviour
    }
 
 
-    //interaccion con monedas
+    //interaccion con objetos   
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Coin"))
+        if (collision.TryGetComponent(out IInteractable interactable))
         {
-            ControladorCoins.instance.SumarCoins(cantidadCoins);
-            Destroy(collision.gameObject);
+            interactable.Interact(this);
         }
     }
 
