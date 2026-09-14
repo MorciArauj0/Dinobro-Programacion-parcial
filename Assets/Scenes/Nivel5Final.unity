@@ -7203,6 +7203,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5028143981301038619, guid: 867e22776867be64387bb0a3d461c60b, type: 3}
+      propertyPath: dialogueFinal
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5028143981301038619, guid: 867e22776867be64387bb0a3d461c60b, type: 3}
       propertyPath: dialoguePanel
       value: 
       objectReference: {fileID: 1574092642}

@@ -13,12 +13,15 @@ public class Dialogue : MonoBehaviour
     [SerializeField] private GameObject key;
     [SerializeField, TextArea(4, 6)] private string[] dialogueSinMonedas;
     [SerializeField, TextArea(4, 6)] private string[] dialogueConMonedas;
+    [SerializeField] private bool dialogueFinal = false;
 
 
 
     private bool isPlayerInRange;
     private bool didDialogueStart;
     private int currentLineIndex;
+    private bool isDialogueFinished = false;
+
 
     //iniciar el diálogo y ocultar el botón de interacción
     private void Start()
@@ -37,6 +40,9 @@ public class Dialogue : MonoBehaviour
     {
         if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
+            if (dialogueFinal && isDialogueFinished)
+                return;
+
             if (!didDialogueStart)
             {
                 StartDialogue();
@@ -98,6 +104,11 @@ public class Dialogue : MonoBehaviour
             didDialogueStart = false;
             dialoguePanel.SetActive(false);
 
+            if (dialogueFinal)
+            {
+                isDialogueFinished = true;
+            }
+
             if (esVendedor)
             {
                 int monedas = ControladorCoins.instance != null ?
@@ -114,6 +125,11 @@ public class Dialogue : MonoBehaviour
                     if (gameManager != null)
                         gameManager.MostrarPanelDerrota();
                 }
+            }
+
+            if (esVendedor && buttonE != null)
+            {
+                buttonE.SetActive(false);
             }
         }   
     }
