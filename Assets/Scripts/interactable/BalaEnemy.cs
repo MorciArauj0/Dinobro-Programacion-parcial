@@ -4,8 +4,6 @@ using UnityEngine.Rendering;
 
 public class BalaEnemy : Daño
 {
-
-
     [SerializeField] private int velocidad;
     [SerializeField] private float distanciaMax;
     private GameObject gameOverPanel;

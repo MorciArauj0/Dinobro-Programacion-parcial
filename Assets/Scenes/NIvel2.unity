@@ -250,6 +250,10 @@ PrefabInstance:
       value: EnemyGrey
       objectReference: {fileID: 0}
     - target: {fileID: 7282470197314216316, guid: c29201956bbb61c439caa2695f1b2228, type: 3}
+      propertyPath: speed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282470197314216316, guid: c29201956bbb61c439caa2695f1b2228, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 951839}

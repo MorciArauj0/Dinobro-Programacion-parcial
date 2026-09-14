@@ -108,7 +108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyNew
   player: {fileID: 0}
   detectionRadius: 0
-  speed: 0
+  speed: 0.1
   "da\xF1oPorToque": 0
   controladorDisparo: {fileID: 0}
   tiempoEntreDisparos: 0
